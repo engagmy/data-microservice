@@ -14,6 +14,21 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
+
+
+
+endpoints:
+  health:
+    sensitive: false
+
+cors:
+  allowedOrigins: "*"
+
+resteasy:
+  jaxrs:
+    app:
+      registration: beans
+
 feign:
   hystrix:
     enabled: true
@@ -54,6 +69,8 @@ management:
     git:
       mode: full
   health:
+    db:
+      enabled: false
     group:
       liveness:
         include: livenessState

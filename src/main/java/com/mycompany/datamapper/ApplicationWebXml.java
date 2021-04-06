@@ -2,6 +2,7 @@ package com.mycompany.datamapper;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
 import tech.jhipster.config.DefaultProfileUtil;
 
 /**
