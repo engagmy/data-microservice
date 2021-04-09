@@ -1,21 +1,25 @@
 package com.mycompany.datamapper.web.rest.dto;
 
-public class OutputData {
+import java.io.Serializable;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class OutputData implements Serializable{
 	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@JsonProperty("name")
 	private String name;
-	private float age;
 	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	public float getAge() {
-		return age;
-	}
-	public void setAge(float age) {
-		this.age = age;
 	}
 
 }

@@ -1,12 +1,21 @@
 package com.mycompany.datamapper.web.rest.dto;
 
+import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class InputData {
+public class InputData implements Serializable{
 	
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@JsonProperty("firstName")
 	private String firstName;
-	private String secondName;
-	private Integer age;
+	@JsonProperty("lastName")
+	private String lastName;
 	
 	public String getFirstName() {
 		return firstName;
@@ -14,17 +23,13 @@ public class InputData {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	public String getSecondName() {
-		return secondName;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setSecondName(String secondName) {
-		this.secondName = secondName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-	public Integer getAge() {
-		return age;
-	}
-	public void setAge(Integer age) {
-		this.age = age;
-	}
+	
+	
 
 }

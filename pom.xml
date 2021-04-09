@@ -309,7 +309,13 @@
 		<!-- <dependency> <groupId>org.apache.camel.springboot</groupId> <artifactId>camel-atlasmap-starter</artifactId> 
 			<version>3.9.0</version> </dependency> -->
 
-		<!-- https://mvnrepository.com/artifact/io.atlasmap/atlas-java-module -->
+		<!-- https://mvnrepository.com/artifact/io.atlasmap/atlas-core -->
+		<dependency>
+			<groupId>io.atlasmap</groupId>
+			<artifactId>atlas-core</artifactId>
+			<version>${atlasmap.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>io.atlasmap</groupId>
 			<artifactId>atlas-java-module</artifactId>
